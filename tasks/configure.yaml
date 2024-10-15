@@ -56,4 +56,3 @@
 - name: "Configure | validate the service file"
   ansible.builtin.command: systemd-analyze verify rclone-yandex.service
   changed_when: false
-  
