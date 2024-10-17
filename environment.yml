@@ -1,5 +1,5 @@
 ---
-name: ansible-role-template
+name: ansible-rclone-yandex
 channels:
   - conda-forge
 dependencies:
