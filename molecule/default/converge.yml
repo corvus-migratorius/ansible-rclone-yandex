@@ -6,11 +6,7 @@
     - name: "Install basic tools"
       ansible.builtin.apt:
         name:
-            - acl
-            - git
-            - tree
-            - vim
-            - curl
+          - curl
         update_cache: true
         cache_valid_time: 3600
         autoremove: true
