@@ -1,6 +1,6 @@
 ---
 - name: "Install | unzip (RHEL)"
-  ansible.builtin.yum:
+  ansible.builtin.dnf:
     name: [ unzip ]
     state: installed
   when: ansible_os_family == 'RHEL'
@@ -27,7 +27,7 @@
         executable: /bin/bash
 
 - name: "Install | fuse (RHEL)"
-  ansible.builtin.yum:
+  ansible.builtin.dnf:
     name: [ fuse ]
     state: installed
   when: ansible_os_family == 'RHEL'
