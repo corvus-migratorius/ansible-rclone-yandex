@@ -16,4 +16,4 @@
     - role: genlab.rclone_yandex
       rclone_mountpoint: /mnt/yandex-disk
       rclone_group: yandex
-      rclone_secrets: key.yaml
+      rclone_secrets: secrets/token.yml
