@@ -50,9 +50,8 @@
     src: templates/rclone-yandex.service.j2
     dest: /lib/systemd/system/rclone-yandex.service
     mode: "0660"
-#    validate: systemd-analyze verify %s
 
-# validate doesn't seem to work here, unfortunately
+# validate attribute doesn't seem to work here, unfortunately, so command to the rescue
 - name: "Configure | validate the service file"
   ansible.builtin.command: systemd-analyze verify rclone-yandex.service
   changed_when: false
