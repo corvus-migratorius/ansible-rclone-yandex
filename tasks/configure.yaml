@@ -19,7 +19,7 @@
 - name: "Configure | set up directories"
   loop:
     - {path: "/tmp/rclone", group: "root"}
-    - {path: "/mnt/yandex-disk", group: "yandex"}
+    - {path: "/mnt/yandex-disk", group: "{{ rclone_group }}"}
   ansible.builtin.file:
     state: directory
     path: "{{ item.path }}"
